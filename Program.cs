@@ -10,8 +10,8 @@ namespace HomeworkTemplate
             Func<Task2, string> TaskSolver = task =>
             {
                 const int padding = Task2.Padding;
-                const int decoratingSingsNumbers = padding / 2;
-                return $"{new string(task.DecorativeSign, decoratingSingsNumbers), -padding}{ task.Balance:C}{new string( task.DecorativeSign, decoratingSingsNumbers), padding}";
+                const int decoratingSingsCount = padding / 2;
+                return $"{new string(task.DecorativeSign, decoratingSingsCount), -padding}{ task.Balance:C}{new string( task.DecorativeSign, decoratingSingsCount), padding}";
             };
 
             Task2.CheckSolver(TaskSolver);
